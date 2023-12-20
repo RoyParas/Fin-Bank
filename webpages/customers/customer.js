@@ -13,15 +13,15 @@ function setCustomer(){
 }
 
 let customers = [
-  { name: "Suresh", email: "xyz@gmail.com", mobile: "9703456712", balance: 1200 },
-  { name: "Ramesh", email: "abc@gmail.com", mobile: "7093221998", balance: 100 },
-  { name: "Mahesh", email: "abc@gmail.com", mobile: "7093221998", balance: 800 },
-  { name: "Paresh", email: "abc@gmail.com", mobile: "7093221998", balance: 500 },
-  { name: "Jignesh", email: "abc@gmail.com", mobile: "7093221998", balance: 1300 },
-  { name: "Ramnesh", email: "abc@gmail.com", mobile: "7093221998", balance: 300 },
-  { name: "Ratnesh", email: "abc@gmail.com", mobile: "7093221998", balance: 600 },
-  { name: "Sumesh", email: "abc@gmail.com", mobile: "7093221998", balance: 900 },
-  { name: "Sukesh", email: "abc@gmail.com", mobile: "7093221998", balance: 700 }
+  { name: "Suresh", email: "suresh@gmail.com", mobile: "9703456712", balance: 1200 },
+  { name: "Ramesh", email: "ramesh@gmail.com", mobile: "7093221998", balance: 100 },
+  { name: "Mahesh", email: "mahesh@gmail.com", mobile: "7093221998", balance: 800 },
+  { name: "Paresh", email: "paresh@gmail.com", mobile: "7093221998", balance: 500 },
+  { name: "Jignesh", email: "jignesh@gmail.com", mobile: "7093221998", balance: 1300 },
+  { name: "Ramnesh", email: "ramesh@gmail.com", mobile: "7093221998", balance: 300 },
+  { name: "Ratnesh", email: "ratnesh@gmail.com", mobile: "7093221998", balance: 600 },
+  { name: "Sumesh", email: "sumesh@gmail.com", mobile: "7093221998", balance: 900 },
+  { name: "Sukesh", email: "sukesh@gmail.com", mobile: "7093221998", balance: 700 }
 ];
 
 let transactionHistory=[];
