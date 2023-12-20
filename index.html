@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Fin Bank/assets/svg.png" type="image/x-icon" />
+    <title>Fin Bank</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/Fin Bank/webpages/home/home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#">
+          <img src="/Fin Bank/assets/Logo.png" alt="logo" class="company-logo"/>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a class="hover-links active" href="#" onclick="setHome()" id="home-nav">Home</a></li>
+            <li><a class="hover-links" href="./webpages/customers/customer.html" id="customer-nav">Customers</a></li>
+            <li><a class="hover-links" href="#" onclick="setAbout()" id="about-nav">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container intro flex">
+      <div class="left">
+        <h3>Welcome to Fin Bank</h3>
+        <p>
+          where financial empowerment meets personalized service. At Fin Bank,
+          we're dedicated to guiding your financial journey with tailored
+          solutions and a commitment to your success. Join us in unlocking
+          opportunities, fostering growth, and building a secure tomorrow, one
+          step at a time.
+        </p>
+        <button id="customButton" class="btn">View Customers</button>
+      </div>
+      <div class="right">
+        <img src="/Fin Bank/assets/banking.jpg" alt="" />
+      </div>
+    </div>
+    <script src="/Fin Bank/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Fin Bank/assets/svg.png" type="image/x-icon"/>
+    <title>Fin Bank</title>
+    <link rel="stylesheet" href="customer.css" />
+    <link rel="stylesheet" href="/Fin Bank/index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container main-nav flex">
+        <a href="/Fin Bank/index.html">
+          <img src="/Fin Bank/assets/Logo.png" alt="logo" class="company-logo"/>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="/Fin Bank/index.html" class="hover-links" id="home-nav">Home</a></li>
+            <li>
+              <a href="#" class="hover-links active" id="customer-nav" onclick="setCustomer()">Customers</a>
+            </li>
+            <li><a href="#" class="hover-links" id="about-nav" onclick="setAbout()">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container card-container flex" id="card-container"></div>
+
+    <div class="pop-up" id="pop-up">
+      <div id="pop-up-name"></div>
+      <div id="pop-up-balance"></div>
+
+      <div class="transfer-pop" id="transfer-pop">
+        <p>Enter the Name To tranfer the amount: </p>
+        <input type="text" id="transfer-name">
+        <p>Enter the Amount To tranfer: </p>
+        <input type="number" id="transfer-amount">
+      </div>
+
+      <div class="show-main-btn" id="show-main-btn">
+        <button type="button" id="red-btn" onclick="showTransfer()">Transfer</button>
+        <button type="button" id="green-btn" onclick="showDeposit()">Deposit</button>
+      </div>
+
+      <div class="perform-transfer-btn" id="perform-transfer-btn">
+        <button type="button" id="red-btn" onclick="confirmTransfer()">Confirm Transfer</button>
+        <button type="button" id="green-btn" onclick="cancelBtn()">Cancel</button>
+      </div>
+
+      <div class="deposit-pop" id="deposit-pop">
+        <p>Enter the Amount to depposit: </p>
+        <input type="number" id="deposit-amount">
+      </div>
+
+      <div class="perform-deposit-btn" id="perform-deposit-btn">
+        <button type="button" id="red-btn" onclick="confirmDeposit()">Confirm Deposit</button>
+        <button type="button" id="green-btn" onclick="cancelBtn()">Cancel</button>
+      </div>
+      
+      <i class="fa-solid fa-plus fa-lg" id="close-btn" onclick="closePopUp()"></i>
+    </div>
+
+    <template id="template-card">
+      <div class="cards" id="cards" onclick="showPopUp(this)">
+        <div class="name" id="name"></div>
+        <div class="email" id="email"></div>
+        <div class="mobile" id="mobile"></div>
+        <div class="balance" id="balance"></div>
+      </div>
+    </template>
+
+    <script src="customer.js"></script>
+    <script src="https://kit.fontawesome.com/14facfb23d.js" crossorigin="anonymous"></script>
+  </body>
+</html>

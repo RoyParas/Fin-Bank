@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans@1&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color:#393f79;
+    --secondary-text-color: #4b75b6;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    margin-inline: auto;
+    max-width: 1180px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0 5px whitesmoke;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.company-logo{
+    width: 110px;
+}
+
+.nav-links ul{
+    gap: 30px;
+}
+
+.hover-links{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.hover-links:hover{
+    color: var(--secondary-text-color);
+}
+
+.hover-links:active{
+    color:#0eb69f;
+}
+
+.hover-links.active{
+    color:#e8718d
+}

@@ -1,0 +1,122 @@
+.card-container{
+    margin-top: 90px;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.cards{
+    height: 160px;
+    width: 315px;
+    border-radius: 10px;
+    box-shadow: 3px 5px rgb(110, 108, 108);
+    background-image: url("/Fin Bank/assets/CardBg.png");
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s ease transform;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cards:hover{
+    transform:translateY(-5px);
+}
+
+.name{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.email{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.mobile{
+    position: absolute;
+    top: 65px;
+    left: 100px;
+}
+
+.balance{
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+}
+
+.pop-up{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 2px solid #ccc;
+    z-index: 1000;
+    background: linear-gradient(to top left, #ccc,#c8c0c033);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    color: #453636;
+}
+
+.transfer-pop,.deposit-pop{
+    font-size: 1.2rem;
+}
+
+.transfer-pop p,.deposit-pop p{
+    margin-bottom: 4px;
+}
+
+#transfer-name,#transfer-amount,#deposit-amount{
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 1rem;
+    background-color: #eeeeeee1;
+    color: #453636;
+    margin-bottom: 10px;
+}
+
+#pop-up-name,#pop-up-balance{
+    font-size: 1.2rem;
+    margin-block: 5px;
+}
+
+#close-btn{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: #453636;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#close-btn:hover{
+    transform: rotate(45deg);
+}
+
+#green-btn,#red-btn{
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#red-btn{
+    background: linear-gradient(to top left, #d0274f, #ff5d83);
+    border: 0;
+    margin-right: 20px;
+}
+
+#green-btn{
+    background: linear-gradient(to top left, #47c22b, #4eed2b);
+    border: 0;
+}
+
