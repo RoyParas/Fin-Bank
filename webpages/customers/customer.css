@@ -9,7 +9,7 @@
     width: 315px;
     border-radius: 10px;
     box-shadow: 3px 5px rgb(110, 108, 108);
-    background-image: url("/Fin Bank/assets/CardBg.png");
+    background-image: url("../../assets/CardBg.png");
     background-position: bottom;
     background-size: cover;
     color: #fff;
